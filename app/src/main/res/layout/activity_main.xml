@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/view1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/dice3"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/view2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/dice4"
+        android:layout_toRightOf="@+id/view1"
+        android:layout_marginRight="45dp"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/diceRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
